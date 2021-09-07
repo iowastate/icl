@@ -1,2 +1,1 @@
-# icl
-ISU Competition Library
+# library
