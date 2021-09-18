@@ -1,7 +1,7 @@
 /** dijkstra's algorithm
 *   @author obrien
 */
-private int dijkstra(ArrayList<Node> graph, Node start, Node end) {
+int dijkstra(ArrayList<Node> graph, Node start, Node end) {
 	start.dist = 0;
 	PriorityQueue<Node> pq = new PriorityQueue<>();
 	pq.addAll(graph);
