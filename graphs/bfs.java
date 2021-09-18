@@ -21,7 +21,7 @@ void bfs(ArrayList<Node> graph, Node start) {
 /** counting depth of breathFirstSearch
 *   @obrien
 */
-int breadthFirstSearch(ArrayList<Node> graph, Node start) {
+int bfsCounter(ArrayList<Node> graph, Node start) {
 	start.visited = true;
 	Queue<Node> q = new LinkedList<>();
 	q.add(start);
