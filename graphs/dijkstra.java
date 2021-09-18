@@ -8,7 +8,6 @@ int dijkstra(ArrayList<Node> graph, Node start, Node end) {
 
 	while (!pq.isEmpty()) {
 		Node u = pq.poll();
-
 		for (int i = 0; i < u.edges.size(); i++) {
 			if (u.dist != Integer.MAX_VALUE) {
 				if (u.dist + u.edges.get(i).weight < u.neighbors.get(i).dist) {
