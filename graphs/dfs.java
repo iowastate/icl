@@ -22,7 +22,6 @@ void dfs(ArrayList<Node> graph, Node start) {
 */
 void dfs(Node start) {
 	start.visited = true;
-	s.add(start.data);
 	for (int i = 0; i < start.neighbors.size(); i++) {
 		if (!start.neighbors.get(i).visited) {
 			dfs(start.neighbors.get(i));
