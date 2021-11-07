@@ -28,3 +28,13 @@ void dfs(Node start) {
 		}
 	}
 }
+
+void dfs(int x) {
+		vis[x] = 1;
+		sum += w[x];
+		for (int i : E.get(x)) {
+			if (vis[i] != 1) {
+				dfs(i);
+			}
+		}
+	}
